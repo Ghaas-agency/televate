@@ -10,24 +10,24 @@ html(lang="en")
     link(rel='icon', type='image/png', href='assets/img/favicon.png')
     // Search Engine
     meta(name='description', content='T_Elevate is a unique e-learning and upskilling platform that maps your preferred career growth to a learning path that is adaptive and unique to your preferences.')
-    meta(name='image', content='assets/img/tsteps-meta.jpg')
+    meta(name='image', content='assets/img/televate-meta.jpg')
     // Schema.org for Google
-    meta(itemprop='name', content="T_Elevate | Adaptive Upskilling To Help You Fasttrack")
+    meta(itemprop='name', content="T_Elevate | Adaptive Upskilling To Help You Fasttrack Your Career Growth")
     meta(itemprop='description', content='T_Elevate is a unique e-learning and upskilling platform that maps your preferred career growth to a learning path that is adaptive and unique to your preferences.')
-    meta(itemprop='image', content='assets/img/tsteps-meta.jpg')
+    meta(itemprop='image', content='assets/img/televate-meta.jpg')
     // Twitter
     meta(name='twitter:card', content='summary')
-    meta(name='twitter:title', content="T_Elevate | Adaptive Upskilling To Help You Fasttrack")
+    meta(name='twitter:title', content="T_Elevate | Adaptive Upskilling To Help You Fasttrack Your Career Growth")
     meta(name='twitter:description', content='T_Elevate is a unique e-learning and upskilling platform that maps your preferred career growth to a learning path that is adaptive and unique to your preferences.')
     //- meta(name='twitter:site', content='@dist_sys')
     //- meta(name='twitter:creator', content='@dist_sys')
-    meta(name='twitter:image:src', content='assets/img/tsteps-meta.jpg')
+    meta(name='twitter:image:src', content='assets/img/televate-meta.jpg')
     // Open Graph general (Facebook, Pinterest & Google+)
     //- meta(name='url', property='og:url', content='https://dsconf.in')
     meta(name='site_name', property='og:site_name', content='T_Steps')
-    meta(name='title', property='og:title', content="T_Elevate | Adaptive Upskilling To Help You Fasttrack")
+    meta(name='title', property='og:title', content="T_Elevate | Adaptive Upskilling To Help You Fasttrack Your Career Growth")
     meta(name='type', property='og:type', content='website')
-    meta(name='image', property='og:image', content='assets/img/tsteps-meta.jpg')
+    meta(name='image', property='og:image', content='assets/img/televate-meta.jpg')
     meta(name='description', property='og:description', content='T_Elevate is a unique e-learning and upskilling platform that maps your preferred career growth to a learning path that is adaptive and unique to your preferences.')
   body
     nav.nav
@@ -55,7 +55,22 @@ html(lang="en")
             .flex-1
               h1 Adaptive Upskilling To Help You Fasttrack Your Career Growth
               p A unique e-learning and upskilling platform that maps your preferred career growth to a learning path. Adaptive and unique to your preferences.
-              a.button(href="#!") Start Now
+              #mc_embed_signup
+                form#mc-embedded-subscribe-form.validate(action="https://xyz.us4.list-manage.com/subscribe/post?u=13f048db3e75d963480afbcda&id=504265d59d", method="post", name="mc-embedded-subscribe-form")
+                  label Launching Soon. Sign Up For Early Access.
+                  #mc_embed_signup_scroll.row
+                    .flex-1
+                      .mc-field-group
+                        input#mce-EMAIL.required.email(type="email", value="", name="EMAIL", placeholder="Enter your email address", required)
+                      .mc-field-group
+                        input#mce-URL(type="hidden", value="", name="URL")
+                      #mce-responses.clear
+                        #mce-error-response.response(style="display:none")
+                        #mce-success-response.response(style="display:none")
+                      div(style="position: absolute; left: -5000px;" aria-hidden="true")
+                        input(type="text" name="b_13f048db3e75d963480afbcda_504265d59d" tabindex="-1" value="")
+                    .clear.flex-1
+                      button#mc-embedded-subscribe.button(type="submit", name="subscribe") Submit
             .flex-1.right
               img(src="assets/img/televate-hero.png", alt="adaptive upskilling career growth")
 
@@ -103,7 +118,7 @@ html(lang="en")
                   | Basic Computer
                   br
                   | Programming Literacy
-                a.button(href="#!") Explore Path
+                a.button(href="#") Explore Path
               .flex-1
                 h4.uppercase Hobbyist Path
                 .separator
@@ -112,7 +127,7 @@ html(lang="en")
                   span.bold.uppercase Prerequisites
                   br
                   | Statistics and Regression
-                a.button(href="#!") Explore Path
+                a.button(href="#") Explore Path
               .flex-1
                 h4.uppercase Professional Path
                 .separator
@@ -121,7 +136,7 @@ html(lang="en")
                   span.bold.uppercase Prerequisites
                   br
                   | Proficiency in R and Python
-                a.button(href="#!") Explore Path
+                a.button(href="#") Explore Path
           .index-paths__course
             h3 Course:
               span.normal  Blockchain Expert
@@ -136,7 +151,7 @@ html(lang="en")
                   | Basic Computer
                   br
                   | Programming Literacy
-                a.button(href="#!") Explore Path
+                a.button(href="#") Explore Path
               .flex-1
                 h4.uppercase Hobbyist Path
                 .separator
@@ -145,7 +160,7 @@ html(lang="en")
                   span.bold.uppercase Prerequisites
                   br
                   | Programing Literacy
-                a.button(href="#!") Explore Path
+                a.button(href="#") Explore Path
               .flex-1
                 h4.uppercase Professional Path
                 .separator
@@ -154,8 +169,8 @@ html(lang="en")
                   span.bold.uppercase Prerequisites
                   br
                   | Proficiency in R and Python
-                a.button(href="#!") Explore Path
-          a.button(href="#!") See All Learning Paths
+                a.button(href="#") Explore Path
+          a.button(href="#") See All Learning Paths
 
     footer.footer.center
       .container
@@ -175,4 +190,8 @@ html(lang="en")
           navMenu.className = 'nav-menu';
           navToggleIcon.src = 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg';
         }
+      }
+
+      window.onload = function() {
+        document.getElementById('mce-URL').value = window.location.href;
       }
