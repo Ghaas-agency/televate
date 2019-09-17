@@ -1,52 +1,16 @@
+include components/_index.pug
 <!DOCTYPE html>
 html(lang="en")
   head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    title T_Elevate | Adaptive Upskilling To Help You Fasttrack Your Career Growth
-    link(href='https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap', rel='stylesheet')
-    link(rel='stylesheet', href='assets/css/style.css')
-    link(rel='icon', type='image/png', href='assets/img/favicon.png')
-    // Search Engine
-    meta(name='description', content='T_Elevate is a unique e-learning and upskilling platform that maps your preferred career growth to a learning path that is adaptive and unique to your preferences.')
-    meta(name='image', content='assets/img/televate-meta.jpg')
-    // Schema.org for Google
-    meta(itemprop='name', content="T_Elevate | Adaptive Upskilling To Help You Fasttrack Your Career Growth")
-    meta(itemprop='description', content='T_Elevate is a unique e-learning and upskilling platform that maps your preferred career growth to a learning path that is adaptive and unique to your preferences.')
-    meta(itemprop='image', content='assets/img/televate-meta.jpg')
-    // Twitter
-    meta(name='twitter:card', content='summary')
-    meta(name='twitter:title', content="T_Elevate | Adaptive Upskilling To Help You Fasttrack Your Career Growth")
-    meta(name='twitter:description', content='T_Elevate is a unique e-learning and upskilling platform that maps your preferred career growth to a learning path that is adaptive and unique to your preferences.')
-    //- meta(name='twitter:site', content='@dist_sys')
-    //- meta(name='twitter:creator', content='@dist_sys')
-    meta(name='twitter:image:src', content='assets/img/televate-meta.jpg')
-    // Open Graph general (Facebook, Pinterest & Google+)
-    //- meta(name='url', property='og:url', content='https://dsconf.in')
-    meta(name='site_name', property='og:site_name', content='T_Steps')
-    meta(name='title', property='og:title', content="T_Elevate | Adaptive Upskilling To Help You Fasttrack Your Career Growth")
-    meta(name='type', property='og:type', content='website')
-    meta(name='image', property='og:image', content='assets/img/televate-meta.jpg')
-    meta(name='description', property='og:description', content='T_Elevate is a unique e-learning and upskilling platform that maps your preferred career growth to a learning path that is adaptive and unique to your preferences.')
+    +headMeta(
+      'T_Elevate | Adaptive Upskilling To Help You Fasttrack Your Career Growth',
+      'T_Elevate is a unique e-learning and upskilling platform that maps your preferred career growth to a learning path that is adaptive and unique to your preferences.',
+      ''
+    )
+    +headScripts('')
+
   body
-    nav.nav
-      .container
-        .row.align-items-center
-          //- .flex-1
-          //-   button.button-unstyled(type="button", onclick="toggleMobileMenu();")
-          //-     img.nav-toggle-icon(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg", alt="menu icon")
-          .flex-1
-            a(href="./")
-              img.nav-logo(src="assets/img/televate-logo.svg", alt="t_steps logo")
-          //- .flex-1.right
-          //-   ul.nav-menu
-          //-     li
-          //-       a(href="#!") About Us
-          //-     li
-          //-       a(href="#!") Blog
-          //- .flex-1.right
-          //-   a.button(href="#!") Contact Us
+    +nav('')
 
     main.index
       section.index-hero
@@ -172,11 +136,7 @@ html(lang="en")
                 a.button(href="#") Explore Path
           a.button(href="#") See All Learning Paths
 
-    footer.footer.center
-      .container
-        p.italic
-          span.bold Powered by
-          |  T_Steps: The Talent Engagement Ecosystem
+      +footer('')
 
     script.
       var navMenu = document.getElementsByClassName('nav-menu')[0];

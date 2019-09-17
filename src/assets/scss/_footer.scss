@@ -1,9 +1,80 @@
 .footer {
   background-color: #052637;
-  padding: 25px 0;
+  padding: 75px 0;
 
-  p {
+  * {
     color: $f;
+  }
+
+  p,
+  li,
+  a {
     font-size: 0.85em;
+    max-width: 450px;
+  }
+
+  &-rows {
+    & > div:first-child {
+      img {
+        max-width: 90px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 35px;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+
+      & > div:last-child {
+        margin-top: 60px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      & > div:last-child {
+        & > .row {
+          flex-wrap: wrap;
+
+          & > div:last-child {
+            min-width: 100%;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  &-menu,
+  &-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+
+    li {
+      margin: 12px 0;
+    }
+  }
+
+  &-social {
+    margin: 0 -10px;
+    margin-top: 25px;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+
+      img {
+        width: 20px;
+        vertical-align: middle;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
   }
 }

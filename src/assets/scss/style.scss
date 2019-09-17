@@ -5,3 +5,11 @@
 @import 'nav';
 @import 'footer';
 @import 'page-index';
+
+.imprint {
+  padding: 15px 0 100px 0;
+
+  .container {
+    max-width: 1000px;
+  }
+}
